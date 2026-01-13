@@ -6,6 +6,7 @@ import PersonsPage from './pages/PersonsPage';
 import DocumentsPage from './pages/DocumentsPage';
 import PhotosPage from './pages/PhotosPage';
 import PersonDetails from './pages/PersonDetails';
+import FamilyTreePage from './pages/FamilyTreePage';
 import './App.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path="/persons/:id" element={<PersonDetails />} />
             <Route path="/documents" element={<DocumentsPage />} />
             <Route path="/photos" element={<PhotosPage />} />
+            <Route path="/family-tree" element={<FamilyTreePage />} />
           </Routes>
         </main>
       </div>

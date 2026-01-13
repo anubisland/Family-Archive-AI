@@ -12,6 +12,7 @@ import documentRoutes from './src/routes/documentRoutes.js';
 import photoRoutes from './src/routes/photoRoutes.js';
 import eventRoutes from './src/routes/eventRoutes.js';
 import cvRoutes from './src/routes/cvRoutes.js';
+import familyTreeRoutes from './src/routes/familyTreeRoutes.js';
 
 // Import database connection
 import { connectDB } from './src/config/sqlite-db.js';
@@ -118,6 +119,7 @@ app.use('/api/documents', documentRoutes);
 app.use('/api/photos', photoRoutes);
 app.use('/api/events', eventRoutes);
 app.use('/api/cv', cvRoutes);
+app.use('/api/family-tree', familyTreeRoutes);
 
 // Health check route
 app.get('/health', (req, res) => {

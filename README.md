@@ -10,13 +10,13 @@ An AI-powered family archive system that helps organize, digitize, and preserve 
 - **📸 Photo Management**: Upload, organize, and manage family photos with metadata
 - **🔍 Advanced Search**: Search through persons, documents, and photos
 - **📊 Dashboard Analytics**: Real-time statistics and insights
+- **📈 Family Tree Visualization**: Interactive family tree with D3.js visualization
 - **🌐 Modern Web UI**: Beautiful, responsive React frontend
 - **🗄️ SQLite Database**: Lightweight, efficient data storage
 - **🔄 Full-Stack Integration**: Complete API with frontend integration
 
 ### 🚧 **Coming Soon:**
 - **👤 Face Recognition**: Identify and tag people in photos
-- **📈 Family Tree Visualization**: Interactive family tree builder
 - **⏰ Timeline Generation**: Chronological life timelines
 - **🤖 Auto CV Generation**: AI-generated biographies from documents
 - **🧠 Smart Document Classification**: Automatic document categorization
@@ -137,6 +137,14 @@ Family-Archive-AI/
 - ✅ Recent documents and activity feeds
 - ✅ Visual data representation
 
+### 🌳 **Family Tree Visualization**
+- ✅ Interactive D3.js-based family tree visualization
+- ✅ Add and manage family relationships (parent/child/spouse/sibling)
+- ✅ Dual view modes: Tree visualization and detailed list view
+- ✅ Family statistics dashboard with connection metrics
+- ✅ Click-to-expand nodes with gender-based styling
+- ✅ Real-time relationship management with validation
+
 ## � API Documentation
 
 ### Core Endpoints
@@ -147,6 +155,24 @@ GET http://localhost:3001/health
 ```
 
 **Family Members:**
+```bash
+GET    http://localhost:3001/api/persons         # Get all family members
+POST   http://localhost:3001/api/persons         # Create new family member
+GET    http://localhost:3001/api/persons/:id     # Get specific family member
+PUT    http://localhost:3001/api/persons/:id     # Update family member
+DELETE http://localhost:3001/api/persons/:id     # Delete family member
+```
+
+**Family Tree:**
+```bash
+GET    http://localhost:3001/api/family-tree/full                    # Get complete family tree data
+GET    http://localhost:3001/api/family-tree/person/:personId        # Get person's relationships
+POST   http://localhost:3001/api/family-tree/relationship           # Create new relationship
+DELETE http://localhost:3001/api/family-tree/relationship/:id       # Delete relationship
+GET    http://localhost:3001/api/family-tree/stats                  # Get family statistics
+```
+
+**Documents:**
 ```bash
 GET    /api/persons          # List all persons
 POST   /api/persons          # Create new person

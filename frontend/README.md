@@ -1,33 +1,61 @@
-# Getting Started with Create React App
+# Family Archive AI - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React TypeScript frontend for the Family Archive AI system with comprehensive family management features.
 
-## Available Scripts
+## 🌟 Features
 
-In the project directory, you can run:
+### 📱 **Application Pages**
+- **Dashboard**: Analytics and quick actions
+- **Family Members**: Complete person management
+- **Documents**: Upload and OCR management
+- **Photos**: Gallery and metadata management
+- **Family Tree**: Interactive visualization with D3.js
+
+### 🌳 **Family Tree Visualization**
+- Interactive D3.js-based family tree
+- Click-to-expand nodes with gender-based styling
+- Dual view modes: Tree visualization and list view
+- Add/remove family relationships
+- Real-time statistics dashboard
+- Relationship validation and management
+
+### 🎨 **UI Components**
+- Modern React components with TypeScript
+- Responsive design with Tailwind CSS
+- Drag & drop file uploads
+- Advanced search and filtering
+- Real-time data updates
+
+## 🚀 Development Scripts
 
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs the app in development mode at [http://localhost:3000](http://localhost:3000)
 
 ### `npm run build`
+Builds the app for production deployment
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `npm test`
+Launches the test runner
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📡 API Integration
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The frontend connects to the backend API at `http://localhost:3001` with proxy configuration for seamless development.
+
+### Key API Endpoints Used:
+- `/api/persons` - Family member management
+- `/api/family-tree/*` - Family tree operations
+- `/api/documents` - Document and OCR operations
+- `/api/photos` - Photo management
+
+## 🛠️ Technology Stack
+
+- **React 19** with TypeScript
+- **React Router** for navigation
+- **Tailwind CSS** for styling
+- **D3.js** for family tree visualization
+- **react-d3-tree** for interactive tree components
+- **Axios** for API communication
+- **React Dropzone** for file uploads
 
 ### `npm run eject`
 

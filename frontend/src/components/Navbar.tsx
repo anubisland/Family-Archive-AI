@@ -8,6 +8,11 @@ const Navbar: React.FC = () => {
   const navigation = [
     { name: 'Dashboard', href: '/', icon: HomeIcon },
     { name: 'Family Members', href: '/persons', icon: UsersIcon },
+    { name: 'Family Tree', href: '/family-tree', icon: ({ className }: { className?: string }) => (
+      <svg className={className} fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9zM21 12H3" />
+      </svg>
+    ) },
     { name: 'Documents', href: '/documents', icon: DocumentTextIcon },
     { name: 'Photos', href: '/photos', icon: PhotoIcon },
   ];
